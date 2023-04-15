@@ -135,20 +135,20 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
   nav {
-          float: none;
+    float: none;
   }
 
   nav ul {
-          text-align: center;
+    text-align: center;
   }
 
   nav ul li {
-          display: block;
+    display: block;
   }
 
   nav ul li a {
-          display: block;
-          margin: 10px 0;
+    display: block;
+    margin: 10px 0;
   }
 }
 
@@ -198,15 +198,15 @@ nav ul li a:hover {
 
 @keyframes mymove {
   from {
-          background-position-x: left;
-          background-position-y: bottom;
-          color: #fff;
+    background-position-x: left;
+    background-position-y: bottom;
+    color: #fff;
   }
 
   to {
-          background-position-x: right;
-          background-position-y: top;
-          color: #000;
+    background-position-x: right;
+    background-position-y: top;
+    color: #000;
   }
 }
 
@@ -219,7 +219,7 @@ nav ul li a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-
+  color: #fff;
   padding: 10px;
   font-size: 30px;
   font-family: myfont, sans-serif;
@@ -242,15 +242,15 @@ nav ul li a:hover {
 
 @keyframes bax {
   0% {
-          box-shadow: 1px 2px 10px rgb(65, 244, 193);
+    box-shadow: 1px 2px 10px rgb(65, 244, 193);
   }
 
   50% {
-          box-shadow: 4px 8px 20px rgb(65, 208, 244);
+    box-shadow: 4px 8px 20px rgb(65, 208, 244);
   }
 
   100% {
-          box-shadow: 8px 8px 30px rgb(25, 138, 225);
+    box-shadow: 8px 8px 30px rgb(25, 138, 225);
   }
 }
 
@@ -295,23 +295,23 @@ nav ul li a:hover {
 
 @keyframes title {
   0% {
-          box-shadow: 1px 2px 10px #d9fff1;
+    box-shadow: 1px 2px 10px #d9fff1;
   }
 
   25% {
-          box-shadow: 1px 2px 10px #9dffd9;
+    box-shadow: 1px 2px 10px #9dffd9;
   }
 
   50% {
-          box-shadow: 4px 8px 20px #75ffc9;
+    box-shadow: 4px 8px 20px #75ffc9;
   }
 
   75% {
-          box-shadow: 1px 2px 10px #57ffbd;
+    box-shadow: 1px 2px 10px #57ffbd;
   }
 
   100% {
-          box-shadow: 8px 8px 30px #1bffa5;
+    box-shadow: 8px 8px 30px #1bffa5;
   }
 
 }
@@ -411,33 +411,68 @@ nav ul li a:hover {
   transform: translate(2em, 2em) rotate(-15deg);
   z-index: 999;
 }
-video{
+
+video {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
   box-shadow: 1px 3px 10px rgb(0 0 0);
 }
+
 .video {
   width: 100%;
   border: 1px solid black;
 }
-.wrapper{
-  display:table;
-  width:auto;
-  position:relative;
-  width:50%;
+
+.wrapper {
+  display: table;
+  width: auto;
+  position: relative;
+  width: 50%;
 }
+
 .playpause {
   background-image: url(img/دکمه-removebg-preview.png);
-  background-repeat:no-repeat;
-  width:50px;
-  height:50px;
-  position:absolute;
-  left:0%;
-  right:0%;
-  top:0%;
-  bottom:0%;
-  margin:auto;
-  background-size:contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  margin: auto;
+  background-size: contain;
   background-position: center;
+  animation-name: ply;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border-radius: 100px;
+}
+@keyframes ply {
+
+  20%{
+    box-shadow: 1px 2px 10px #EE82EE;
+  }
+  40%{
+    box-shadow: 2px 4px 12px#8953c5;
+  }
+  60%{
+    box-shadow: 3px 6px 14px#d31bd3;
+  }
+  80%{
+    box-shadow: 4px 8px 16px #7039a9;
+  }
+  100%{
+    box-shadow: 5px 10px 18px #6A5ACD;
+  }
+
+}
+iframe{
+  max-width: 100%;
+ 
+  border-radius: 10px;
+  box-shadow: 1px 3px 10px rgb(0 0 0);
+  
 }
