@@ -9,7 +9,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "index.html",
-            "file": "c:\\Users\\SOHAYB-N13\\Videos\\tamrin\\index.html",
+            "file": "C:\\Users\\SOHAYB-N13\\Documents\\GitHub\\Fulcrum.in\\index.html",
             "runtimeExecutable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
             
         }
