@@ -417,6 +417,8 @@ video {
   height: auto;
   border-radius: 10px;
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.33);
+  filter: grayscale(80%);
+  
 }
 
 .video {
