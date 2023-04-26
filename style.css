@@ -333,13 +333,13 @@ nav ul li a:hover {
   width: 7em;
   border: 0px solid transparent;
   border-radius: 10em;
-  background-color: rgb(202, 193, 193);
+  background-color: rgba(202, 193, 193, 0.323);
   transition: background-color 250ms;
   z-index: 999;
 }
 
 .toggle-checkbox:checked~.toggle-slot {
-  background-color: #374151;
+  background-color: #37415139;
   z-index: 999;
 }
 
@@ -349,15 +349,15 @@ nav ul li a:hover {
   height: 3em;
   width: 3em;
   border-radius: 50%;
-  background-color: #ffeccf;
-  box-shadow: inset 0px 0px 0px 0.75em #ffbb52;
+  background-color: #ffeccf4a;
+  box-shadow: inset 0px 0px 0px 0.75em #ffba5259;
   transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26, 2, .46, .71);
   z-index: 999;
 }
 
 .toggle-checkbox:checked~.toggle-slot .toggle-button {
-  background-color: #485367;
-  box-shadow: inset 0px 0px 0px 0.75em white;
+  background-color: #4853673a;
+  box-shadow: inset 0px 0px 0px 0.75em rgba(255, 255, 255, 0.183);
   transform: translate(3.65em, 0.25em);
   z-index: 999;
 }
@@ -366,7 +366,7 @@ nav ul li a:hover {
   position: fixed;
   height: 6em;
   width: 6em;
-  color: #ffbb52;
+  color: #ffba523a;
   z-index: 999;
 }
 
@@ -391,7 +391,7 @@ nav ul li a:hover {
   position: fixed;
   height: 6em;
   width: 6em;
-  color: white;
+  color: rgba(255, 255, 255, 0.208);
   z-index: 999;
 }
 
@@ -416,12 +416,12 @@ video {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 1px 3px 10px rgb(0 0 0);
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.33);
 }
 
 .video {
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.257);
 }
 
 .wrapper {
