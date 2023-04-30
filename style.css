@@ -28,7 +28,7 @@ body {
 
 .dark-mode {
   background-color: rgb(36, 36, 36);
-  color: white;
+  color: #ffffff;
 }
 
 .container {
@@ -289,29 +289,29 @@ nav ul li a:hover {
 }
 
 .container h1:hover {
-  color: #1bffa5;
+  color: #fdf03529 ;
   text-shadow: 1px 2px 10px #1bffa5;
 }
 
 @keyframes title {
   0% {
-    box-shadow: 1px 2px 10px #d9fff1;
+    text-shadow: 1px 2px 10px #d9fff1;
   }
 
   25% {
-    box-shadow: 1px 2px 10px #9dffd9;
+    text-shadow: 1px 2px 10px #9dffd9;
   }
 
   50% {
-    box-shadow: 4px 8px 20px #75ffc9;
+    text-shadow: 4px 8px 20px #75ffc9;
   }
 
   75% {
-    box-shadow: 1px 2px 10px #57ffbd;
+    text-shadow: 1px 2px 10px #57ffbd;
   }
 
   100% {
-    box-shadow: 8px 8px 30px #1bffa5;
+    text-shadow: 8px 8px 30px #1bffa5;
   }
 
 }
