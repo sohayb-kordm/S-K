@@ -493,6 +493,7 @@ iframe{
 
 
 .text1{
+  color: #fff;
   font-size: 5vw;
   flex-grow: 1;
   text-align: center;
@@ -504,7 +505,7 @@ iframe{
   height: auto;
   border: none;
   border-radius: 30px;
-  
+ background-image: url(https://cdn.footagefarm.ir/2021/06/black-wallpaper-with-motion-lines-background-12572933-21-19-479-390x220.jpg);
 }
 @keyframes c4 {
   0% {
@@ -552,7 +553,7 @@ button {
  button:active {
   letter-spacing: 3px;
   background-color: hsl(261deg 80% 48%);
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
   box-shadow: rgb(87, 255, 189) 0px 0px 0px 0px;
   transform: translateY(10px);
   transition: 100ms;
