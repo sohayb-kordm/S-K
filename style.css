@@ -493,14 +493,15 @@ iframe{
 
 
 .text1{
+  font-size: 5vw;
   flex-grow: 1;
   text-align: center;
   animation-name: c4;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  width: 70vw;
-  height: 70vw;
+  max-width: 100%;
+  height: auto;
   border: none;
   border-radius: 30px;
   
