@@ -225,6 +225,7 @@ nav ul li a:hover {
   font-size: 30px;
   font-family: myfont, sans-serif;
   text-shadow: 10px 10px 10px rgb(0, 0, 0);
+  z-index: 2;
 }
 
 .main .b1 {
