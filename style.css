@@ -81,7 +81,7 @@ nav ul li a:hover {
 }
 
 .profile img {
-
+  position: relative;
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -269,30 +269,22 @@ nav ul li a:hover {
 
 .container .profile-title {
   background-image: linear-gradient(#6f717100, #2e2f2f00);
-  padding: 20px;
   text-align: center;
   animation-name: title;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-}
-
-.container h1 {
-
-
   font-size: 36px;
   margin: 0;
   font-family: myFont1, sans-serif;
   font-weight: 300;
   font-size: 48px;
-
   transition: color 0.5s;
 }
 
-.container h1:hover {
-  color: #fdf03529 ;
-  text-shadow: 1px 2px 10px #1bffa5;
-}
+
+
+
 
 @keyframes title {
   0% {
