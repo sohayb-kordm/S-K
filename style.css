@@ -15,10 +15,12 @@
 }
 
 body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.7;
-  background-color: white;
-  color: rgb(0, 0, 0);
+ 
+  
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -26,10 +28,7 @@ body {
   background-attachment: fixed;
 }
 
-.dark-mode {
-  background-color: rgb(36, 36, 36);
-  color: #ffffff;
-}
+
 
 .container {
   max-width: 1100px;
@@ -317,100 +316,6 @@ nav ul li a:hover {
 }
 
 
-.toggle-checkbox {
-  position: fixed;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-  z-index: 999;
-}
-
-.toggle-slot {
-  font-size: 10px;
-  position: fixed;
-  height: 3.5em;
-  width: 7em;
-  border: 0px solid transparent;
-  border-radius: 10em;
-  background-color: rgba(202, 193, 193, 0.323);
-  transition: background-color 250ms;
-  z-index: 999;
-}
-
-.toggle-checkbox:checked~.toggle-slot {
-  background-color: #37415139;
-  z-index: 999;
-}
-
-.toggle-button {
-  transform: translate(0.3em, 0.25em);
-  position: fixed;
-  height: 3em;
-  width: 3em;
-  border-radius: 50%;
-  background-color: #ffeccf4a;
-  box-shadow: inset 0px 0px 0px 0.75em #ffba5259;
-  transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26, 2, .46, .71);
-  z-index: 999;
-}
-
-.toggle-checkbox:checked~.toggle-slot .toggle-button {
-  background-color: #4853673a;
-  box-shadow: inset 0px 0px 0px 0.75em rgba(255, 255, 255, 0.183);
-  transform: translate(3.65em, 0.25em);
-  z-index: 999;
-}
-
-.sun-icon {
-  position: fixed;
-  height: 6em;
-  width: 6em;
-  color: #ffba523a;
-  z-index: 999;
-}
-
-.sun-icon-wrapper {
-  position: fixed;
-  height: 6em;
-  width: 6em;
-  opacity: 1;
-  transform: translate(2em, 2em) rotate(15deg);
-  transform-origin: 50% 50%;
-  transition: opacity 150ms, transform 500ms cubic-bezier(.26, 2, .46, .71);
-  z-index: 999;
-}
-
-.toggle-checkbox:checked~.toggle-slot .sun-icon-wrapper {
-  opacity: 0;
-  transform: translate(3em, 2em) rotate(0deg);
-  z-index: 999;
-}
-
-.moon-icon {
-  position: fixed;
-  height: 6em;
-  width: 6em;
-  color: rgba(255, 255, 255, 0.208);
-  z-index: 999;
-}
-
-.moon-icon-wrapper {
-  position: fixed;
-  height: 6em;
-  width: 6em;
-  opacity: 0;
-  transform: translate(11em, 2em) rotate(0deg);
-  transform-origin: 50% 50%;
-  transition: opacity 150ms, transform 500ms cubic-bezier(.26, 2.5, .46, .71);
-  z-index: 999;
-}
-
-.toggle-checkbox:checked~.toggle-slot .moon-icon-wrapper {
-  opacity: 1;
-  transform: translate(2em, 2em) rotate(-15deg);
-  z-index: 999;
-}
 
 video {
   max-width: 100%;
@@ -479,10 +384,13 @@ iframe{
   
 }
 .text{
+  color: #000000;
   font-size: 20px;
   font-family: myFont, sans-serif;
   text-align: center;
   text-shadow: 1px 4px 6px #000;
+  z-index: 999;
+ 
 }
 .container1 {
   display: flex;
@@ -505,7 +413,8 @@ iframe{
   height: auto;
   border: none;
   border-radius: 30px;
- background-image: url(https://cdn.footagefarm.ir/2021/06/black-wallpaper-with-motion-lines-background-12572933-21-19-479-390x220.jpg);
+ background-color: #fefefe00;
+ z-index: 990;
 }
 @keyframes c4 {
   0% {
@@ -533,29 +442,82 @@ button {
   padding: 17px 40px;
   border-radius: 50px;
   border: 0;
-  background-color: rgba(240, 26, 222, 0.66);
-  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  background-color: rgba(240, 26, 222, 0);
+  box-shadow: rgb(0, 0, 0) 0 0 8px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   font-size: 20px;
   transition: all .5s ease;
   font-family: myFont, sans-serif;
+  color: #000000;
+z-index: 999;
+  
  }
  
  button:hover {
   letter-spacing: 3px;
-  background-color: hsl(261deg 80% 48%);
-  color: hsl(0, 0%, 100%);
+  background-color: hsla(0, 0%, 100%, 0);
+  color: hsl(0, 0%, 0%);
   box-shadow: rgb(27, 255, 165) 0px 7px 29px 0px;
   font-family: myFont, sans-serif;
+ 
  }
  
  button:active {
   letter-spacing: 3px;
-  background-color: hsl(261deg 80% 48%);
-  color: hsl(0, 0%, 0%);
+  background-color: hsla(261, 80%, 48%, 0);
+  color: hsl(0, 0%, 100%);
   box-shadow: rgb(87, 255, 189) 0px 0px 0px 0px;
   transform: translateY(10px);
   transition: 100ms;
   font-family: myFont, sans-serif;
+
  }
+
+   /* ---- reset ---- */
+
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+  
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  
+}
+
+/* ---- stats.js ---- */
+
+
+.js-count-particles {
+    font-size: 1.1em;
+  
+}
+
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+    
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+   
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+   
+}

@@ -23,18 +23,15 @@
 </head>
 
 <body>
-        <label>
-                <input class="toggle-checkbox" type="checkbox">
-                <div class="toggle-slot">
-                        <div class="sun-icon-wrapper">
-                                <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
-                        </div>
-                        <div class="toggle-button"></div>
-                        <div class="moon-icon-wrapper">
-                                <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
-                        </div>
-                </div>
-        </label>
+            <!-- particles.js container -->
+    <div id="particles-js"></div>
+    <!-- stats - count particles -->
+    <div class="count-particles"> <span class="js-count-particles"></span>  </div>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+      
 
         <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; "
                 class="container">
@@ -63,10 +60,10 @@
                                                         class="text1"></textarea></center>
                                         </div>
                         
-                        <br>
+                        <br><br><br><br><br><br>
                         <center>
                                 <button type="button" id="copyText" class="loginBut" name="submit"
-                                        onclick="sendMsg(); reset();" value="ارسال پیام" autocomplete="off"> <p>ارسال پیام</p>
+                                        onclick="sendMsg(); reset();" value="ارسال پیام" autocomplete="off">ارسال پیام
                                 </button>
                         </center>
                         <br>
@@ -98,6 +95,7 @@
 
         </header>
         <main>
+                
                 <br><br>
                 <div class="main">
                         <br><br><br>
@@ -173,7 +171,8 @@
 
                         <center><b style="font-size: 30px; text-align: center; color: #ffffffff;">. . .</b>
                         </center>
-                        <br><br>
+                        <br><br>+
+                        
                         <img src="img/pplxlavbmqv3.jpeg" alt="">
                         <br>
                         <h1 style="text-align: right ; color: #ffffffff;font-size: 26px;"> ! خب،شاید بهتر باشه
