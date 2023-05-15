@@ -19,8 +19,6 @@ body {
   font: normal 75% Arial, Helvetica, sans-serif;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.7;
- 
-  
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -87,20 +85,22 @@ nav ul li a:hover {
   border-radius: 50%;
   border: 3px solid #3a3a3a;
   border-color: rgb(175, 175, 175);
+  z-index: 4;
 }
 
 .profile p {
   position: absolute;
-  top: 5px;
+  top: -5px;
   right: 0px;
   padding: 10px;
-  background-color: rgb(133, 73, 193);
-
+  background-color: rgba(0, 0, 0, 0.153);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   border-radius: 10px;
   font-family: myFont, sans-serif;
+  z-index: 1;
+  box-shadow: rgb(0, 0, 0) 0 0 8px;
 }
 
 .main img {
@@ -110,28 +110,46 @@ nav ul li a:hover {
   box-shadow: 1px 3px 10px rgb(0 0 0);
   z-index: 2;
   position: relative;
+  z-index: 4;
 }
 
 .profile button {
   position: absolute;
-  top: 52px;
-  background-color: #03201c;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
+  top: 45px;
+  right: 60px;
+  left: 90px;
+  padding: 5px 5px;
+  border-radius: 20px;
+  border: 0;
+  background-color: rgba(240, 26, 222, 0);
+  box-shadow: rgb(0, 0, 0) 0 0 8px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
-  padding: 5px 10px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  border-radius: 10px;
+  font-size: 18px;
+  transition: all .5s ease;
   font-family: myFont, sans-serif;
+  color: #000000;
+  z-index: 1;
 }
 
 .profile button:hover {
-  background-color: #06f3cb;
-  color: #000;
+  letter-spacing: 3px;
+  background-color: hsla(0, 0%, 0%, 0.63);
+  color: hsl(0, 0%, 0%);
+  box-shadow: rgba(0, 0, 0, 0.726) 0px 7px 29px 0px;
   font-family: myFont, sans-serif;
+
+}
+
+.profile button:active {
+  letter-spacing: 3px;
+  background-color: hsla(261, 80%, 48%, 0);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(87, 255, 189) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+  font-family: myFont, sans-serif;
+
 }
 
 @media (max-width: 768px) {
@@ -244,15 +262,23 @@ nav ul li a:hover {
 
 @keyframes bax {
   0% {
-    box-shadow: 1px 2px 10px rgb(65, 244, 193);
+    box-shadow: 1px 2px 10px #000000;
+  }
+
+  25% {
+    box-shadow: 1px 2px 10px #000000b6;
   }
 
   50% {
-    box-shadow: 4px 8px 20px rgb(65, 208, 244);
+    box-shadow: 4px 8px 20px #0000008d;
+  }
+
+  75% {
+    box-shadow: 1px 2px 10px #00000072;
   }
 
   100% {
-    box-shadow: 8px 8px 30px rgb(25, 138, 225);
+    box-shadow: 8px 8px 30px #00000034;
   }
 }
 
@@ -289,23 +315,23 @@ nav ul li a:hover {
 
 @keyframes title {
   0% {
-    text-shadow: 1px 2px 10px #d9fff1;
+    text-shadow: 1px 2px 10px #000000;
   }
 
   25% {
-    text-shadow: 1px 2px 10px #9dffd9;
+    text-shadow: 1px 2px 10px #000000b6;
   }
 
   50% {
-    text-shadow: 4px 8px 20px #75ffc9;
+    text-shadow: 4px 8px 20px #0000008d;
   }
 
   75% {
-    text-shadow: 1px 2px 10px #57ffbd;
+    text-shadow: 1px 2px 10px #00000072;
   }
 
   100% {
-    text-shadow: 8px 8px 30px #1bffa5;
+    text-shadow: 8px 8px 30px #00000034;
   }
 
 }
@@ -318,7 +344,7 @@ video {
   border-radius: 10px;
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.33);
   filter: grayscale(80%);
-  
+
 }
 
 .video {
@@ -352,50 +378,59 @@ video {
   animation-direction: alternate;
   border-radius: 100px;
 }
+
 @keyframes ply {
 
-  20%{
-    box-shadow: 1px 2px 10px #EE82EE;
+  0% {
+    box-shadow: 1px 2px 10px #000000;
   }
-  40%{
-    box-shadow: 2px 4px 12px#8953c5;
+
+  25% {
+    box-shadow: 1px 2px 10px #000000b6;
   }
-  60%{
-    box-shadow: 3px 6px 14px#d31bd3;
+
+  50% {
+    box-shadow: 4px 8px 20px #0000008d;
   }
-  80%{
-    box-shadow: 4px 8px 16px #7039a9;
+
+  75% {
+    box-shadow: 1px 2px 10px #00000072;
   }
-  100%{
-    box-shadow: 5px 10px 18px #6A5ACD;
+
+  100% {
+    box-shadow: 8px 8px 30px #00000034;
   }
 
 }
-iframe{
+
+iframe {
   max-width: 100%;
- 
+
   border-radius: 10px;
   box-shadow: 1px 3px 10px rgb(0 0 0);
-  
+
 }
-.text{
+
+.text {
   color: #000000;
   font-size: 20px;
   font-family: myFont, sans-serif;
   text-align: center;
   text-shadow: 1px 4px 6px #000;
   z-index: 999;
- 
+
 }
+
 .container1 {
   display: flex;
   flex-direction: column;
-  height: 40vh; /* تنظیم ارتفاع کادر برای پر کردن اندازه صفحه */
+  height: 40vh;
+  /* تنظیم ارتفاع کادر برای پر کردن اندازه صفحه */
 }
 
 
 
-.text1{
+.text1 {
   color: #fff;
   font-size: 5vw;
   flex-grow: 1;
@@ -408,36 +443,38 @@ iframe{
   height: auto;
   border: none;
   border-radius: 30px;
- background-color: #fefefe00;
- z-index: 990;
+  background-color: #fefefe00;
+  z-index: 990;
 }
+
 @keyframes c4 {
   0% {
-    box-shadow: 1px 2px 10px #d9fff1;
+    box-shadow: 1px 2px 10px #000000;
   }
 
   25% {
-    box-shadow: 1px 2px 10px #9dffd9;
+    box-shadow: 1px 2px 10px #000000b6;
   }
 
   50% {
-    box-shadow: 4px 8px 20px #75ffc9;
+    box-shadow: 4px 8px 20px #0000008d;
   }
 
   75% {
-    box-shadow: 1px 2px 10px rgb(87, 255, 189);
+    box-shadow: 1px 2px 10px #00000072;
   }
 
   100% {
-    box-shadow: 8px 8px 30px rgb(27, 255, 165);
+    box-shadow: 8px 8px 30px #00000034;
   }
 
 }
+
 button {
   padding: 17px 40px;
   border-radius: 50px;
   border: 0;
-  background-color: rgba(240, 26, 222, 0);
+  background-color: rgba(0, 0, 0, 0);
   box-shadow: rgb(0, 0, 0) 0 0 8px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -446,82 +483,84 @@ button {
   font-family: myFont, sans-serif;
   color: #000000;
   z-index: 1;
-  
- }
- 
- button:hover {
+
+}
+
+button:hover {
   letter-spacing: 3px;
-  background-color: hsla(0, 0%, 100%, 0);
+  background-color: hsla(0, 0%, 0%, 0.63);
   color: hsl(0, 0%, 0%);
-  box-shadow: rgb(27, 255, 165) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.726) 0px 7px 29px 0px;
   font-family: myFont, sans-serif;
- 
- }
- 
- button:active {
+
+}
+
+button:active {
   letter-spacing: 3px;
-  background-color: hsla(261, 80%, 48%, 0);
+  background-color: hsla(0, 0%, 0%, 0.856);
   color: hsl(0, 0%, 100%);
-  box-shadow: rgb(87, 255, 189) 0px 0px 0px 0px;
+  box-shadow: rgba(0, 0, 0, 0.713) 0px 0px 0px 0px;
   transform: translateY(10px);
   transition: 100ms;
   font-family: myFont, sans-serif;
 
- }
+}
 
-   /* ---- reset ---- */
+/* ---- reset ---- */
 
 
 canvas {
-    display: block;
-    vertical-align: bottom;
-  
+  display: block;
+
+
 }
 
 /* ---- particles.js container ---- */
 #particles-js {
-    background-color: #00000000;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 0;
+  background-color: #00000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 /* ---- stats.js ---- */
 
 
 .js-count-particles {
-    font-size: 1.1em;
-  
+  font-size: 1.1em;
+
 }
 
 #stats,
 .count-particles {
-    -webkit-user-select: none;
-    margin-top: 5px;
-    margin-left: 5px;
-    
+  user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+
 }
 
 #stats {
-    border-radius: 3px 3px 0 0;
-    overflow: hidden;
-   
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+
 }
 
 .count-particles {
-    border-radius: 0 0 3px 3px;
-   
+  border-radius: 0 0 3px 3px;
+
 }
-header{
+
+header {
   z-index: 1;
 
 }
-main{
+
+main {
   z-index: 5;
 }
