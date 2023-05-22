@@ -134,7 +134,7 @@ nav ul li a:hover {
 
 .profile button:hover {
   letter-spacing: 3px;
-  background-color: hsla(0, 0%, 0%, 0.63);
+  background-color: rgba(0, 0, 0, 0.63);
   color: hsl(0, 0%, 0%);
   box-shadow: rgba(0, 0, 0, 0.726) 0px 7px 29px 0px;
   font-family: myFont, sans-serif;
@@ -424,7 +424,7 @@ iframe {
 .container1 {
   display: flex;
   flex-direction: column;
-  height: 40vh;
+  height: 200px;
   /* تنظیم ارتفاع کادر برای پر کردن اندازه صفحه */
 }
 
