@@ -12,7 +12,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
-        <meta charset="UTF-8">
         <meta name="robots" content="index,follow">
 
 
@@ -66,6 +65,8 @@
                                 <button type="button" id="copyText" class="loginBut" name="submit"
                                         onclick="sendMsg(); reset();" value="ارسال پیام" autocomplete="off">ارسال پیام
                                 </button>
+                                <button class="button-style"
+                                onclick="window.open('https://sohayb-kordm.github.io/py/', 'blank')">جواب پیام ها </button>
                         </center>
                         <br>
                         <p id="successMsg" style="display: none; color: green;">پیام با موفقیت ارسال شد</p>
@@ -74,7 +75,7 @@
                                 function sendMsg() {
                                         alert("پیام با موفقیت ارسال شد");
                                         var text = $('#message').eq(0).val();
-                                        $.post("https://harfeto.timefriend.net/harfeto/sendMsg", { text: text, id: id }, function (result, status) {
+                                        $.post("https://sohayb-kordm.github.io/py/", { text: text, id: id }, function (result, status) {
                                                 if (status == 'success') {
                                                         var obj = JSON.parse(result);
                                                         if (obj.id != '0') {
