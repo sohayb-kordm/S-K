@@ -431,7 +431,9 @@ iframe {
 
 .text1 {
   color: #000000;
-  font-size: 5vw;
+  height: 5vw;
+  width: 60vw;
+  font-size: 20px;
   flex-grow: 1;
   text-align: center;
   animation-name: c4;
@@ -444,6 +446,10 @@ iframe {
   border-radius: 30px;
   background-color: #fefefe00;
   z-index: 990;
+}
+
+.text1:hover {
+  font-size: 10px;
 }
 
 @keyframes c4 {
